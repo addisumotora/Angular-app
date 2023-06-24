@@ -1,3 +1,26 @@
 <div class="container">
-  <button mat-raised-button color="primary" (click)="openDialog()">Fetch Data</button>
+  <button
+    *ngIf="!fetchedData"
+    mat-raised-button
+    color="primary"
+    (click)="openDialog()"
+  >
+    Fetch Data
+  </button>
+  <div class="container">
+    <div class="product-list">
+      <div class="product-list-header">
+        <h1>{{ selectedOption }}</h1>
+        <button mat-raised-button color="primary" (click)="openDialog()">
+          Fetch Data
+        </button>
+      </div>
+      <mat-card *ngFor="let data of fetchedData">
+        <mat-card-content>
+          <h1>{{ data.title }}</h1>
+          <p>{{ data.description }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
 </div>

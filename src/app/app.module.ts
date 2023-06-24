@@ -12,7 +12,6 @@ import { MatSelectModule } from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatButtonModule} from '@angular/material/button';
-import { ProductListComponent } from './product-list/product-list.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import {MatCardModule} from '@angular/material/card';
 
@@ -20,7 +19,6 @@ import {MatCardModule} from '@angular/material/card';
   declarations: [
     AppComponent,
     PopupComponent,
-    ProductListComponent,
     FetchDataComponent
   ],
   imports: [
