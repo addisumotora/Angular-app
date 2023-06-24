@@ -26,3 +26,7 @@ mat-card{
     box-shadow: none;
     background-color: rgb(206, 206, 206);
 }
+
+.btn{
+    margin: 20px;
+}
