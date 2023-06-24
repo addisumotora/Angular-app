@@ -1,0 +1,15 @@
+<div class="container">
+  <h2 mat-dialog-title>Products</h2>
+  <mat-form-field>
+    <mat-label>Select an option</mat-label>
+    <mat-select [(ngModel)]="selectedOption">
+      <mat-option *ngFor="let option of options" [value]="option">{{
+        option
+      }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-raised-button color="primary" (click)="fetch()" cdkFocusInitial>Fetch</button>
+  </mat-dialog-actions>
+</div>
